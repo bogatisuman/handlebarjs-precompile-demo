@@ -7,7 +7,7 @@ module.exports = function(grunt) {
                     
                     // converting all .hbs(handlerbar template file ) into all.js file
                     // you can change the directory according to your requirement
-                    "js/all.js": ["templates/*.hbs"]
+                    "js/all.js": ["templates/**/*.hbs"]
                 }
             }
         },
@@ -17,7 +17,7 @@ module.exports = function(grunt) {
 			 *  if so there will be peform the task hanldebars which does precompile (.hbs to .js)
 			 *  **/
             templates : {
-			    files: ["templates/*.hbs"],
+			    files: ["templates/**/*.hbs"],
                 tasks: ['handlebars']
             },
 
